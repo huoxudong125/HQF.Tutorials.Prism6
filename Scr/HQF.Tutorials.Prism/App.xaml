@@ -1,0 +1,8 @@
+﻿<Application x:Class="HQF.Tutorials.Prism.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:HQF.Tutorials.Prism">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
