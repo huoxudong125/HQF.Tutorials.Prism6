@@ -5,5 +5,5 @@ https://transitionals.codeplex.com/
 
 
 ## Code Analyize
-https://stylecop.codeplex.com/
+https://stylecop.codeplex.com/  
 http://michaelsync.net/2014/07/19/status-of-fxcop-code-analysis
