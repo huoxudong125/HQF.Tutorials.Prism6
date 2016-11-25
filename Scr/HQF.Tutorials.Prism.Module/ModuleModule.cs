@@ -1,20 +1,16 @@
-﻿using Prism.Modularity;
-using Prism.Regions;
-using System;
-using System.Threading;
+﻿using System.Threading;
 using HQF.Tutorials.Prism.Infrastructure.Events;
 using Prism.Events;
+using Prism.Modularity;
 
 namespace HQF.Tutorials.Prism.Module
 {
     public class ModuleModule : IModule
     {
-        IRegionManager _regionManager;
         private readonly IEventAggregator _eventAggregator;
 
-        public ModuleModule(RegionManager regionManager,IEventAggregator eventAggregator)
+        public ModuleModule(IEventAggregator eventAggregator)
         {
-            _regionManager = regionManager;
             _eventAggregator = eventAggregator;
         }
 
