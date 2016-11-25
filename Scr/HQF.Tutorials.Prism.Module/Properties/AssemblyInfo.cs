@@ -10,10 +10,7 @@ using System.Windows;
 [assembly: AssemblyTitle("HQF.Tutorials.Prism.Module")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
 [assembly: AssemblyProduct("HQF.Tutorials.Prism.Module")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2016")]
-[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 

@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQF.Tutorials.Prism.Infrast
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQF.Tutorials.Prism.Module", "Scr\HQF.Tutorials.Prism.Module\HQF.Tutorials.Prism.Module.csproj", "{EDFF3A40-9FEE-4773-A066-D50F7CB150A9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{31B4792E-1941-4887-A4B1-12EEE2696DA1}"
+	ProjectSection(SolutionItems) = preProject
+		Shared\GlobalAssemblyInfo.cs = Shared\GlobalAssemblyInfo.cs
+		Shared\VersionInfo.cs = Shared\VersionInfo.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
