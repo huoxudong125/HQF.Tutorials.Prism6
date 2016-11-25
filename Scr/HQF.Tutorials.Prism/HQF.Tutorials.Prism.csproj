@@ -137,6 +137,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HQF.Tutorials.Prism.ImageViewer\HQF.Tutorials.Prism.ImageViewer.csproj">
+      <Project>{7C34480A-BAF3-47CB-8966-8C8CF6A90FC2}</Project>
+      <Name>HQF.Tutorials.Prism.ImageViewer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HQF.Tutorials.Prism.Infrastructure\HQF.Tutorials.Prism.Infrastructure.csproj">
       <Project>{75e069cf-4dbd-4da7-9d12-690beeb0a8b9}</Project>
       <Name>HQF.Tutorials.Prism.Infrastructure</Name>

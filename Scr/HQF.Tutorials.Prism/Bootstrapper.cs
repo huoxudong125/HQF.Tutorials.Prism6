@@ -2,6 +2,7 @@
 using Prism.Unity;
 using HQF.Tutorials.Prism.Views;
 using System.Windows;
+using HQF.Tutorials.Prism.ImageViewer;
 using HQF.Tutorials.Prism.Infrastructure.Interfaces;
 using HQF.Tutorials.Prism.Module;
 using HQF.Tutorials.Prism.Splash;
@@ -28,6 +29,7 @@ namespace HQF.Tutorials.Prism
             //becarefull the orders
             catalog.AddModule(typeof(SplashModule));
             catalog.AddModule(typeof(ModuleModule));
+            catalog.AddModule(typeof(ImageViewerModule));
         }
 
         protected override void ConfigureContainer()

@@ -4,6 +4,12 @@
 ##Prism 
 [PRISM 4 CUSTOM TRANSITIONING REGION](https://sachabarbs.wordpress.com/2011/01/04/prism-4-custom-transitioning-region/)  
 
+## Modules
+
+https://prismsplashscreen.codeplex.com/
+
+
+
 ## WPF Controls
 https://transitionals.codeplex.com/
 

@@ -26,6 +26,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transitionals", "Scr\Framework\Transitionals\Transitionals.csproj", "{FC8A5D35-6B80-4DB1-8DA5-0271677967E3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{888B8CE3-41AA-4E03-8D71-69A7A04A9530}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQF.Tutorials.Prism.ImageViewer", "Scr\HQF.Tutorials.Prism.ImageViewer\HQF.Tutorials.Prism.ImageViewer.csproj", "{7C34480A-BAF3-47CB-8966-8C8CF6A90FC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,11 +56,16 @@ Global
 		{FC8A5D35-6B80-4DB1-8DA5-0271677967E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC8A5D35-6B80-4DB1-8DA5-0271677967E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC8A5D35-6B80-4DB1-8DA5-0271677967E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C34480A-BAF3-47CB-8966-8C8CF6A90FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C34480A-BAF3-47CB-8966-8C8CF6A90FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C34480A-BAF3-47CB-8966-8C8CF6A90FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C34480A-BAF3-47CB-8966-8C8CF6A90FC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FC8A5D35-6B80-4DB1-8DA5-0271677967E3} = {5CCDEDAC-9A6F-46A8-A1D4-7258AF614D87}
+		{7C34480A-BAF3-47CB-8966-8C8CF6A90FC2} = {888B8CE3-41AA-4E03-8D71-69A7A04A9530}
 	EndGlobalSection
 EndGlobal
