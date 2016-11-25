@@ -10,6 +10,9 @@ namespace HQF.Tutorials.Prism.Extensions.Regions
     /// 又变换效果的
     /// https://sachabarbs.wordpress.com/2011/01/04/prism-4-custom-transitioning-region/
     /// 
+    /// protected override RegionAdapterMappings ConfigureRegionAdapterMappings()
+    /// eg。 mappings.RegisterMapping(typeof(TransitionElement), 
+    ///          Container.GetExportedValue<TransitionElementAdaptor>());
     /// </summary>
     public class TransitionElementAdaptor : RegionAdapterBase<TransitionElement>
     {
