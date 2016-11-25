@@ -17,12 +17,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{31B479
 		Shared\VersionInfo.cs = Shared\VersionInfo.cs
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controls", "Controls", "{BE968CE3-8EA2-4659-B822-35080A416BB5}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CD21E1B4-BFBC-46CA-9255-BC2ADD756C58}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{5CCDEDAC-9A6F-46A8-A1D4-7258AF614D87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transitionals", "Scr\Framework\Transitionals\Transitionals.csproj", "{FC8A5D35-6B80-4DB1-8DA5-0271677967E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,8 +48,15 @@ Global
 		{EDFF3A40-9FEE-4773-A066-D50F7CB150A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDFF3A40-9FEE-4773-A066-D50F7CB150A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDFF3A40-9FEE-4773-A066-D50F7CB150A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC8A5D35-6B80-4DB1-8DA5-0271677967E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC8A5D35-6B80-4DB1-8DA5-0271677967E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC8A5D35-6B80-4DB1-8DA5-0271677967E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC8A5D35-6B80-4DB1-8DA5-0271677967E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FC8A5D35-6B80-4DB1-8DA5-0271677967E3} = {5CCDEDAC-9A6F-46A8-A1D4-7258AF614D87}
 	EndGlobalSection
 EndGlobal

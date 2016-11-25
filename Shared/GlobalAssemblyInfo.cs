@@ -1,5 +1,5 @@
 ﻿using System.Reflection;
 
 [assembly: AssemblyTrademark("")]
-[assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2016")]
+[assembly: AssemblyCompany("FulledLink")]
+[assembly: AssemblyCopyright("Copyright © itelite 2016")]
