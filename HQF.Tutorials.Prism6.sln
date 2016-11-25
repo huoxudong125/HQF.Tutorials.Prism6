@@ -30,6 +30,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{888B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQF.Tutorials.Prism.ImageViewer", "Scr\HQF.Tutorials.Prism.ImageViewer\HQF.Tutorials.Prism.ImageViewer.csproj", "{7C34480A-BAF3-47CB-8966-8C8CF6A90FC2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQF.Tutorials.Prism.Extensions", "Scr\HQF.Tutorials.Prism.Extensions\HQF.Tutorials.Prism.Extensions.csproj", "{2D5F337F-FDC1-4AE7-BB5A-AB46471E2EEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,6 +62,10 @@ Global
 		{7C34480A-BAF3-47CB-8966-8C8CF6A90FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C34480A-BAF3-47CB-8966-8C8CF6A90FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C34480A-BAF3-47CB-8966-8C8CF6A90FC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D5F337F-FDC1-4AE7-BB5A-AB46471E2EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D5F337F-FDC1-4AE7-BB5A-AB46471E2EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D5F337F-FDC1-4AE7-BB5A-AB46471E2EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D5F337F-FDC1-4AE7-BB5A-AB46471E2EEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
