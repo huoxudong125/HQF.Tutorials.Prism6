@@ -20,7 +20,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -137,6 +137,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HQF.Tutorials.Prism.Extensions\HQF.Tutorials.Prism.Extensions.csproj">
+      <Project>{2d5f337f-fdc1-4ae7-bb5a-ab46471e2eee}</Project>
+      <Name>HQF.Tutorials.Prism.Extensions</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HQF.Tutorials.Prism.ImageViewer\HQF.Tutorials.Prism.ImageViewer.csproj">
       <Project>{7C34480A-BAF3-47CB-8966-8C8CF6A90FC2}</Project>
       <Name>HQF.Tutorials.Prism.ImageViewer</Name>

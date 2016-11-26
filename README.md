@@ -8,7 +8,9 @@
 
 https://prismsplashscreen.codeplex.com/
 
-
+### Plugins 
+Copy Plugins to specific folder.
+`xcopy "$(TargetDir)$(TargetFileName)" "$(TargetDir)modules\" /y`
 
 ## WPF Controls
 https://transitionals.codeplex.com/

@@ -32,6 +32,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQF.Tutorials.Prism.ImageVi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQF.Tutorials.Prism.Extensions", "Scr\HQF.Tutorials.Prism.Extensions\HQF.Tutorials.Prism.Extensions.csproj", "{2D5F337F-FDC1-4AE7-BB5A-AB46471E2EEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQF.Tutorials.Prism.ModuleTracker", "Scr\HQF.Tutorials.Prism.ModuleTracker\HQF.Tutorials.Prism.ModuleTracker.csproj", "{54FA1A77-3A42-45B7-B837-53B0C7D36C82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQF.Tutorials.Prism.ImageEditor", "Scr\HQF.Tutorials.Prism.ImageEditor\HQF.Tutorials.Prism.ImageEditor.csproj", "{55580291-D930-4357-92D8-B97F52B81064}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,6 +70,14 @@ Global
 		{2D5F337F-FDC1-4AE7-BB5A-AB46471E2EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D5F337F-FDC1-4AE7-BB5A-AB46471E2EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D5F337F-FDC1-4AE7-BB5A-AB46471E2EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54FA1A77-3A42-45B7-B837-53B0C7D36C82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54FA1A77-3A42-45B7-B837-53B0C7D36C82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54FA1A77-3A42-45B7-B837-53B0C7D36C82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54FA1A77-3A42-45B7-B837-53B0C7D36C82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55580291-D930-4357-92D8-B97F52B81064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55580291-D930-4357-92D8-B97F52B81064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55580291-D930-4357-92D8-B97F52B81064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55580291-D930-4357-92D8-B97F52B81064}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,5 +85,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{FC8A5D35-6B80-4DB1-8DA5-0271677967E3} = {5CCDEDAC-9A6F-46A8-A1D4-7258AF614D87}
 		{7C34480A-BAF3-47CB-8966-8C8CF6A90FC2} = {888B8CE3-41AA-4E03-8D71-69A7A04A9530}
+		{54FA1A77-3A42-45B7-B837-53B0C7D36C82} = {888B8CE3-41AA-4E03-8D71-69A7A04A9530}
+		{55580291-D930-4357-92D8-B97F52B81064} = {888B8CE3-41AA-4E03-8D71-69A7A04A9530}
 	EndGlobalSection
 EndGlobal

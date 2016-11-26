@@ -1,16 +1,19 @@
-﻿using Microsoft.Practices.Unity;
-using Prism.Unity;
-using HQF.Tutorials.Prism.Views;
+﻿using System;
+using System.IO;
 using System.Windows;
+using HQF.Tutorials.Prism.Extensions.Catalogs;
 using HQF.Tutorials.Prism.ImageViewer;
 using HQF.Tutorials.Prism.Infrastructure.Interfaces;
 using HQF.Tutorials.Prism.Module;
 using HQF.Tutorials.Prism.Splash;
+using HQF.Tutorials.Prism.Views;
+using Microsoft.Practices.Unity;
 using Prism.Modularity;
+using Prism.Unity;
 
 namespace HQF.Tutorials.Prism
 {
-    class Bootstrapper : UnityBootstrapper
+    internal class Bootstrapper : UnityBootstrapper
     {
         protected override DependencyObject CreateShell()
         {
@@ -24,12 +27,20 @@ namespace HQF.Tutorials.Prism
 
         protected override void ConfigureModuleCatalog()
         {
-            ModuleCatalog catalog = (ModuleCatalog)ModuleCatalog;
+            var catalog = (ModuleCatalog) ModuleCatalog;
 
-            //becarefull the orders
+            //be careful the orders
             catalog.AddModule(typeof(SplashModule));
             catalog.AddModule(typeof(ModuleModule));
             catalog.AddModule(typeof(ImageViewerModule));
+        }
+
+        protected override IModuleCatalog CreateModuleCatalog()
+        {
+            
+            var catalog =
+                new DynamicDirectoryModuleCatalog(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Modules"));
+            return catalog;
         }
 
         protected override void ConfigureContainer()
