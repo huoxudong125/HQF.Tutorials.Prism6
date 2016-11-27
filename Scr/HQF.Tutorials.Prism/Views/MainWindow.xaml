@@ -2,12 +2,14 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:prism="http://prismlibrary.com/"
+        xmlns:constants="clr-namespace:HQF.Tutorials.Prism.Infrastructure.Constants;assembly=HQF.Tutorials.Prism.Infrastructure"
         prism:ViewModelLocator.AutoWireViewModel="True"
         Title="{Binding Title}"
         Height="350" 
         Width="525"
         WindowState="Maximized">
-    <Grid>
-        <ContentControl prism:RegionManager.RegionName="ContentRegion" />
-    </Grid>
+    <DockPanel>
+        <ContentControl prism:RegionManager.RegionName="{x:Static constants:RegionNames.MenuRegion}" DockPanel.Dock="Top"/>
+        <ContentControl prism:RegionManager.RegionName="{x:Static constants:RegionNames.ContentRegion}" />
+    </DockPanel>
 </Window>

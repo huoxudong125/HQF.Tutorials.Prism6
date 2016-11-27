@@ -9,5 +9,6 @@ namespace HQF.Tutorials.Prism.Infrastructure.Constants
     public class RegionNames
     {
         public static readonly string ContentRegion = "ContentRegion";
+        public static readonly string MenuRegion = "MenuRegion";
     }
 }

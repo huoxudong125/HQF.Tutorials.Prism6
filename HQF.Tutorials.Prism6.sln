@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQF.Tutorials.Prism", "Scr\HQF.Tutorials.Prism\HQF.Tutorials.Prism.csproj", "{99C9E82C-C594-446D-AA59-8FFBC43AD226}"
+	ProjectSection(ProjectDependencies) = postProject
+		{61FD0B31-D36E-4DE8-8213-6692848D4AF1} = {61FD0B31-D36E-4DE8-8213-6692848D4AF1}
+		{55580291-D930-4357-92D8-B97F52B81064} = {55580291-D930-4357-92D8-B97F52B81064}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQF.Tutorials.Prism.Splash", "Scr\HQF.Tutorials.Prism.Splash\HQF.Tutorials.Prism.Splash.csproj", "{AB8B448C-DD74-4D60-A041-3E5D03A32180}"
 EndProject
@@ -35,6 +39,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQF.Tutorials.Prism.ModuleTracker", "Scr\HQF.Tutorials.Prism.ModuleTracker\HQF.Tutorials.Prism.ModuleTracker.csproj", "{54FA1A77-3A42-45B7-B837-53B0C7D36C82}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQF.Tutorials.Prism.ImageEditor", "Scr\HQF.Tutorials.Prism.ImageEditor\HQF.Tutorials.Prism.ImageEditor.csproj", "{55580291-D930-4357-92D8-B97F52B81064}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQF.Tutorials.Prism.MainMenu", "Scr\HQF.Tutorials.Prism.MainMenu\HQF.Tutorials.Prism.MainMenu.csproj", "{61FD0B31-D36E-4DE8-8213-6692848D4AF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -78,6 +84,10 @@ Global
 		{55580291-D930-4357-92D8-B97F52B81064}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55580291-D930-4357-92D8-B97F52B81064}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55580291-D930-4357-92D8-B97F52B81064}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61FD0B31-D36E-4DE8-8213-6692848D4AF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61FD0B31-D36E-4DE8-8213-6692848D4AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61FD0B31-D36E-4DE8-8213-6692848D4AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61FD0B31-D36E-4DE8-8213-6692848D4AF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,5 +97,6 @@ Global
 		{7C34480A-BAF3-47CB-8966-8C8CF6A90FC2} = {888B8CE3-41AA-4E03-8D71-69A7A04A9530}
 		{54FA1A77-3A42-45B7-B837-53B0C7D36C82} = {888B8CE3-41AA-4E03-8D71-69A7A04A9530}
 		{55580291-D930-4357-92D8-B97F52B81064} = {888B8CE3-41AA-4E03-8D71-69A7A04A9530}
+		{61FD0B31-D36E-4DE8-8213-6692848D4AF1} = {888B8CE3-41AA-4E03-8D71-69A7A04A9530}
 	EndGlobalSection
 EndGlobal

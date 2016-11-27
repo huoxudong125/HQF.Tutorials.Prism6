@@ -64,11 +64,16 @@
       <Link>Properties\GlobalAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="Behaviours\SplashBehaviour.cs" />
+    <Compile Include="Constants\DefaultTopLevelMenuNames.cs" />
     <Compile Include="Constants\WellKnownModuleNames.cs" />
     <Compile Include="Constants\RegionNames.cs" />
+    <Compile Include="Events\ApplicationExitEvent.cs" />
+    <Compile Include="Events\ApplicationExitEventArgs.cs" />
     <Compile Include="Events\CloseSplashEvent.cs" />
+    <Compile Include="Events\FileOpenEvent.cs" />
     <Compile Include="Events\MessageUpdateEvent.cs" />
     <Compile Include="Interfaces\IModuleTracker.cs" />
+    <Compile Include="Interfaces\IFileMenu.cs" />
     <Compile Include="Interfaces\IShell.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

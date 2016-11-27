@@ -149,6 +149,10 @@
       <Project>{75e069cf-4dbd-4da7-9d12-690beeb0a8b9}</Project>
       <Name>HQF.Tutorials.Prism.Infrastructure</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HQF.Tutorials.Prism.MainMenu\HQF.Tutorials.Prism.MainMenu.csproj">
+      <Project>{61fd0b31-d36e-4de8-8213-6692848d4af1}</Project>
+      <Name>HQF.Tutorials.Prism.MainMenu</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HQF.Tutorials.Prism.Module\HQF.Tutorials.Prism.Module.csproj">
       <Project>{edff3a40-9fee-4773-a066-d50f7cb150a9}</Project>
       <Name>HQF.Tutorials.Prism.Module</Name>

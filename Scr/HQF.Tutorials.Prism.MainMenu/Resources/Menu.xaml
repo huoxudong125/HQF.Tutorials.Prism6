@@ -1,0 +1,152 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+                    xmlns:mainMenu="clr-namespace:HQF.Tutorials.Prism.MainMenu.Menus"
+                    xmlns:menus="clr-namespace:HQF.Tutorials.Prism.Extensions.Menus;assembly=HQF.Tutorials.Prism.Extensions"
+                    xmlns:constants="clr-namespace:HQF.Tutorials.Prism.Infrastructure.Constants;assembly=HQF.Tutorials.Prism.Infrastructure">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="MenuGroup.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    
+
+    <!-- File Menu Groups -->
+    <menus:MenuGroupDescription x:Key="FileCommands"
+							   Name="Files"
+							   SortIndex="10" />
+    <menus:MenuGroupDescription x:Key="PrinterCommands"
+							   Name="Printing"
+							   SortIndex="90" />
+    <menus:MenuGroupDescription x:Key="ApplicationCommands"
+							   Name="Application"
+							   SortIndex="100" />
+
+    <!-- Tool Menu Groups -->
+
+    <!-- Help Menu Groups -->
+    <menus:MenuGroupDescription x:Key="DocumentationCommands"
+							   Name="Documentation"
+							   SortIndex="10" />
+    <menus:MenuGroupDescription x:Key="WebCommands"
+							   Name="Web"
+							   SortIndex="80" />
+    <menus:MenuGroupDescription x:Key="AboutCommands"
+							   Name="ExampleCompany"
+							   SortIndex="100" />
+
+    <!--	This resource realizes the views for the menu via data templates -->
+    <menus:MenuItemNode x:Key="FileMenu"
+                        Text="{x:Static constants:DefaultTopLevelMenuNames.File}"
+					   SortIndex="10">
+
+        <menus:MenuItemNode Group="{StaticResource FileCommands}"
+						   Text="_Open"
+						   SortIndex="10">
+            <menus:MenuItemNode Text="_File"
+								  Command="{x:Static mainMenu:FileCommands.OpenFileCommand}"
+								  SortIndex="10" />
+        </menus:MenuItemNode>
+
+        <menus:MenuItemNode Group="{StaticResource FileCommands}"
+						   Text="_Save"
+						   SortIndex="20"
+						   Command="{x:Static mainMenu:FileCommands.SaveCommand}" />
+        <menus:MenuItemNode Group="{StaticResource PrinterCommands}"
+						   Text="_Print..."
+						   SortIndex="10"
+						   Command="{x:Static mainMenu:FileCommands.PrintCommand}" />
+        <menus:MenuItemNode Group="{StaticResource ApplicationCommands}"
+						   Text="E_xit"
+						   SortIndex="10"
+						   Command="{x:Static mainMenu:FileCommands.ExitApplicationCommand}" />
+    </menus:MenuItemNode>
+
+    <menus:MenuItemNode x:Key="ToolMenu"
+                        Text="{x:Static constants:DefaultTopLevelMenuNames.Tools}"
+					   SortIndex="20">
+    </menus:MenuItemNode>
+
+    <menus:MenuItemNode x:Key="HelpMenu"
+                        Text="{x:Static constants:DefaultTopLevelMenuNames.Help}"
+					   SortIndex="100">
+        <menus:MenuItemNode Group="{StaticResource AboutCommands}"
+						  Text="_About"
+						  Command="{x:Static mainMenu:FileCommands.AboutCommand}"
+						  SortIndex="100" />
+    </menus:MenuItemNode>
+
+
+    <!--Value converter to create a CollectionViewSource,
+			I have to use a IValueConverter to get it into the Template (on the first line of code)-->
+
+    <mainMenu:MenuCollectionViewConverter x:Key="GroupViewConverter" />
+    
+    
+    <!-- The style for the header of a group of menu items -->
+    <DataTemplate x:Key="GroupHeaderTemplate">
+        <Grid x:Name="gridRoot"
+          Background="#d9e4ec">
+            <TextBlock Text="{Binding Name}"
+                   Margin="4" />
+            <Rectangle Stroke="{x:Static SystemColors.MenuBrush}"
+                   VerticalAlignment="Top"
+                   Height="1" />
+            <Rectangle Stroke="#bbb"
+                   VerticalAlignment="Bottom"
+                   Height="1" />
+        </Grid>
+        <DataTemplate.Triggers>
+            <DataTrigger Binding="{Binding Name}"
+                     Value="{x:Null}">
+                <Setter TargetName="gridRoot"
+                    Property="Visibility"
+                    Value="Collapsed" />
+            </DataTrigger>
+        </DataTemplate.Triggers>
+    </DataTemplate>
+
+    <!-- Binds the MenuItemNode's properties to the generated MenuItem container -->
+    <Style x:Key="MenuItemStyle"
+       TargetType="MenuItem">
+        <Setter Property="Header"
+            Value="{Binding Text}" />
+        <Setter Property="Command"
+            Value="{Binding Command}" />
+        <Setter Property="GroupStyleSelector"
+            Value="{x:Static mainMenu:MenuGroupStyleSelectorProxy.MenuGroupStyleSelector}" />
+    </Style>
+
+    <Style x:Key="TopMenuItemStyle"
+       TargetType="MenuItem">
+        <Setter Property="Header"
+            Value="{Binding Text}" />
+        <Setter Property="Command"
+            Value="{Binding Command}" />
+        <Setter Property="GroupStyleSelector"
+            Value="{x:Static mainMenu:MenuGroupStyleSelectorProxy.MenuGroupStyleSelector}" />
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding Path=Children.Count}"
+                     Value="0">
+                <Setter Property="Visibility"
+                    Value="Collapsed" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding}"
+                     Value="{x:Null}">
+                <Setter Property="Visibility"
+                    Value="Collapsed" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- MainMenuView -->
+    <DataTemplate DataType="{x:Type menus:MainMenuNode}">
+        <Menu ItemsSource="{Binding Menus, Converter={StaticResource GroupViewConverter}}"
+          ItemContainerStyle="{StaticResource TopMenuItemStyle}" />
+    </DataTemplate>
+
+    <!-- MenuItemView -->
+    <HierarchicalDataTemplate DataType="{x:Type menus:MenuItemNode}"
+                          ItemsSource="{Binding Children, Converter={StaticResource GroupViewConverter}}"
+                          ItemContainerStyle="{StaticResource MenuItemStyle}" />
+</ResourceDictionary>
