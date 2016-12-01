@@ -25,9 +25,6 @@ namespace HQF.Tutorials.Prism.MainMenu
         {
             // INSERT RESOURCES
             ResourceDictionary dictionary = new ResourceDictionary();
-            //dictionary.Source = new Uri("pack://application:,,,/HQF.Tutorials.Prism.MainMenu;Component/Resources/MenuGroup.xaml");
-            //Application.Current.Resources.MergedDictionaries.Add(dictionary);
-            //dictionary = new ResourceDictionary();
             dictionary.Source = new Uri("pack://application:,,,/HQF.Tutorials.Prism.MainMenu;Component/Resources/Menu.xaml");
             Application.Current.Resources.MergedDictionaries.Add(dictionary);
 

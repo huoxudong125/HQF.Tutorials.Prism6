@@ -3,6 +3,7 @@ using HQF.Tutorials.Prism.Infrastructure.Events;
 using Microsoft.Practices.ServiceLocation;
 using Prism.Commands;
 using Prism.Events;
+using Microsoft.Win32;
 
 namespace HQF.Tutorials.Prism.MainMenu.Menus
 {
@@ -54,8 +55,14 @@ namespace HQF.Tutorials.Prism.MainMenu.Menus
 
         private static void OpenFile()
         {
-            var events = (IEventAggregator)ServiceLocator.Current.GetService(typeof(IEventAggregator));
-            events.GetEvent<FileOpenEvent>().Publish("Lighthouse.jpg");
+            //var events = (IEventAggregator)ServiceLocator.Current.GetService(typeof(IEventAggregator));
+            //events.GetEvent<FileOpenEvent>().Publish("Lighthouse.jpg");
+            FileDialog dialog=new OpenFileDialog();
+            dialog.Filter = "图像文件(*.bmp, *.jpg)|*.bmp;*.jpg|所有文件(*.*)|*.*";
+            dialog.CheckFileExists = true;
+            dialog.ShowDialog();
+
+
         }
 
         private static void ExitApplication()
