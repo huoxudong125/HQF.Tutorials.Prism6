@@ -31,10 +31,10 @@ namespace HQF.Tutorials.Prism
             var catalog = (ModuleCatalog) ModuleCatalog;
 
             //be careful the orders
-            catalog.AddModule(typeof(MainMenuModule));
+            
             catalog.AddModule(typeof(SplashModule));
             catalog.AddModule(typeof(ModuleModule));
-           
+            catalog.AddModule(typeof(MainMenuModule));
             catalog.AddModule(typeof(ImageViewerModule));
         }
 

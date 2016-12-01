@@ -1,7 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-                    xmlns:mainMenu="clr-namespace:HQF.Tutorials.Prism.MainMenu.Menus"
+                    xmlns:mainMenu="clr-namespace:HQF.Tutorials.Prism.MainMenu.Menus;assembly=HQF.Tutorials.Prism.MainMenu"
                     xmlns:menus="clr-namespace:HQF.Tutorials.Prism.Extensions.Menus;assembly=HQF.Tutorials.Prism.Extensions"
                     xmlns:constants="clr-namespace:HQF.Tutorials.Prism.Infrastructure.Constants;assembly=HQF.Tutorials.Prism.Infrastructure">
 
@@ -35,7 +35,7 @@
 							   Name="ExampleCompany"
 							   SortIndex="100" />
 
-    <!--	This resource realizes the views for the menu via data templates -->
+    	<!--This resource realizes the views for the menu via data templates--> 
     <menus:MenuItemNode x:Key="FileMenu"
                         Text="{x:Static constants:DefaultTopLevelMenuNames.File}"
 					   SortIndex="10">

@@ -47,7 +47,8 @@ namespace HQF.Tutorials.Prism.MainMenu
             menu.AddTopLevelMenu(helpMenu);
 
             MainMenuNode root = menu.GetMenuRoot();
-            _regionManager.Regions[RegionNames.MenuRegion].Add(root);
+            //_regionManager.Regions[RegionNames.MenuRegion].Add(root);
+            _regionManager.RegisterViewWithRegion(RegionNames.MenuRegion, menu.GetMenuRoot);
         }
     }
 }
