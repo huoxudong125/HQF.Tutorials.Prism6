@@ -110,6 +110,10 @@
       <Project>{fc8a5d35-6b80-4db1-8da5-0271677967e3}</Project>
       <Name>Transitionals</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HQF.Tutorials.Prism.Extensions\HQF.Tutorials.Prism.Extensions.csproj">
+      <Project>{2D5F337F-FDC1-4AE7-BB5A-AB46471E2EEE}</Project>
+      <Name>HQF.Tutorials.Prism.Extensions</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HQF.Tutorials.Prism.Infrastructure\HQF.Tutorials.Prism.Infrastructure.csproj">
       <Project>{75e069cf-4dbd-4da7-9d12-690beeb0a8b9}</Project>
       <Name>HQF.Tutorials.Prism.Infrastructure</Name>
